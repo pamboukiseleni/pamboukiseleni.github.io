@@ -1,0 +1,187 @@
+body{
+	margin:0;
+	padding:0;
+  background-color: #999;
+  fony-size:40px;
+  font-family: sans-serif;
+  font-weight: 400;
+  color: white;
+}
+.patty{
+  color:limegreen;
+}
+
+.outer{
+  text-align: center;
+}
+
+.page{
+	position:relative;
+	margin-top:0px;
+	background-color: #FFF;
+  max-width:1200px;
+  width:100%;
+  height:100%;
+  display: inline-block;
+  text-align: left;
+  height:99vh;
+}
+
+#menu img{
+  width:30px;
+  cursor:pointer;
+}
+
+#menuoverlay{
+  position: absolute;
+  top:0px;
+  background-color: black;
+  width:100%;
+  height:98vh;
+  display:none;
+  text-align: center;
+}
+
+#close{
+  position: absolute;
+  right:10px;
+  top:10px;
+  font-size: 30px;
+  cursor:pointer;
+
+}
+
+.innermenu{
+  margin-top: 50px;
+}
+
+.innermenu div{
+  padding-bottom:50px;
+}
+a{
+  color:white;
+  font-size:16px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right:12px;
+  font-weight: 900;
+}
+
+a:hover {
+  color:darkgrey;  
+ }
+  a:active {
+  color:#CCC;
+}
+.topofpage{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    height:100px
+    align-items:center;
+    background-color: black;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    flex-grow: 1;
+    text-align: left;
+    width: 100%;
+    position: sticky;
+    top:0;
+    z-index: 100;
+    opacity: .9;
+    position: -webkit-sticky; /* Safari */
+}
+.nav{
+  padding-right: 50px;
+  display: inline-block;
+}
+.navright{
+  margin-left: auto; 
+}
+.logo{
+  max-width: 100px;
+  text-align: left;
+  align-content: flex-start;
+}
+.logo_img{
+  width: 50%;
+  padding-left: 0px;
+}
+.menu{
+  display: none;
+}
+.search{
+    max-width: 100px;
+    text-align: right;
+    align-content:flex-end;
+    margin-left: auto;
+}
+.search_img{
+  width: 30%;
+  padding-right: 0px;
+}
+.patty{
+  color:limegreen;
+}
+.content{
+  background-color: black;
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.tile{
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:600px;
+  max-width: 100%;
+}
+.tilebg1{
+  background-image: url(img/tile1.jpg);
+}
+
+@media screen and (max-width:850px){
+  
+  body{
+    background-color: #D3D3D3;
+      }
+  .page{
+    max-width: 480px;
+    }
+  .menu{
+    display: inline-block;
+    }
+  .menu img{
+    width: 50px;
+    padding: 10px;
+  }
+  .logo{
+    display: none;
+  }
+  .navbar{
+    display: none;
+    }
+  }
+
+  @media screen and (min-width:800px) and (max-width:1250px){
+  body{
+    background-color: #808080;
+  }
+  .page{
+    max-width: 800px;
+    }
+  }
+
+  @media screen and (min-width:1450px){
+  body{
+    background-color: #404040;
+  }
+  .page{
+    max-width: 14000px;
+    }
+  }
