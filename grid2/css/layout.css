@@ -1,0 +1,60 @@
+body{
+  font-family: sans-serif;
+}
+
+.outer{
+  text-align: center;
+}
+
+.page{
+  max-width: 1200px;
+  width: 100%;
+  display: inline-block;
+}
+
+.topnav{
+  background-color: tan;
+  height: 100px;
+  text-align: left;
+}
+/* HERO IMAGE */
+.hero_content{
+  font-size:28px;
+  text-align: center;
+}
+.hero_text_headline{
+  font-weight: bold;
+  font-size: 34px;
+}
+
+.hero_content img{
+  width:100%;
+}
+
+/* SIDEBAR COMPONENT */
+.side_bar{
+  height:100%;
+  overflow: auto;
+  margin-top:20px;
+  margin-bottom:20px;
+  text-align: left;
+
+}
+.side_bar .section{
+   color: #3e608e;
+   text-transform: uppercase;
+   font-weight: bold;
+}
+.side_bar img{
+  float: right;
+  width: 100%;
+  max-width: 70px;
+}
+/* [class^="side_bar"] element that starts with */
+div [class^="side_bar"]:first-of-type {
+    margin: 0px;
+   
+}
+
+div [class^="side_bar"]:last-of-type {
+    margin: 0px;
