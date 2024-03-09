@@ -1,0 +1,67 @@
+body{
+  font-family: 'Avenir';
+}
+
+.outer{
+  text-align: center;
+}
+
+.page{
+  max-width: 1200px;
+  width: 100%;
+  display: inline-block;
+}
+
+.topnav{
+  background-color: tan;
+  height: 100px;
+  text-align: left;
+  font-family: Spectral, serif;
+  font-weight: 400;
+}
+/* HERO IMAGE */
+.hero_content{
+  font-size:20px;
+  text-align: center;
+  color:black;
+  text-decoration: underline;
+}
+.hero_text_headline{
+  font-weight: bold;
+  font-size: 34px;
+}
+
+.hero_content img{
+  width:100%;
+  margin-top: 10px;
+}
+
+/* SIDEBAR COMPONENT */
+.side_bar{
+  height:100%;
+  overflow: auto;
+  margin-top:20px;
+  margin-bottom:20px;
+  text-align: center;
+
+}
+.side_bar .section{
+   color: black;
+   text-transform: lowercase;
+   text-decoration: underline;
+   font-weight: bold;
+}
+.side_bar img{
+  width: 100%;
+  max-width: 450px;
+  height: 100%;
+  margin-top: 10px;
+}
+/* [class^="side_bar"] element that starts with */
+div [class^="side_bar"]:first-of-type {
+    margin: 0px;
+   
+}
+
+div [class^="side_bar"]:last-of-type {
+    margin: 0px;
