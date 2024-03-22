@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+}
+
+/* ==== GRID SYSTEM ==== */
+
+
+.container {
+  max-width: 1200px;
+  margin:auto;
+  color:blue;
+  max-width: 1200px;
+}
+
+.row {
+  position: relative;
+  width: 100%;
+  
+}
+
+.row [class^="col"] {
+  float: left;
+  margin: 0% 0%;
+  min-height: 0.125rem;
+  height: 100%;
+}
+
+
+.col-1 {
+    width: 8.33%;
+    background: white;
+  }
+
+  .col-2 {
+    width: 16.66%;
+    background: white;
+  }
+
+  .col-3 {
+    width: 25%;
+    background: white;   
+  }
+
+  .col-4 {
+    width: 33.33%;
+    background: white;
+    color: black;
+    height: 200px;
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  .col-5 {
+    width: 41.67%;
+    background: white;
+  }
+
+  .col-6 {
+    width: 50%;
+    background: white;
+    color: black;
+  }
+  
+
+  .col-7 {
+    width: 58.33%;
+    background: white;
+  }
+
+  .col-8 {
+    width: 66.67%;
+    background: white;
+  }
+
+  .col-9 {
+    width: 75%;
+    background:white;
+  }
+
+  .col-10 {
+    width: 83.33%;
+    background: white;
+  }
+
+  .col-11 {
+    width: 91.67%;
+    background: white;
+  }
+
+  .col-12 {
+    width: 100%;
+    background: white;
+    max-height: 10px;
+  }
+
+/* This is clearfix, clearing content after each row*/
+.row::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+div [class^="col"] {
+    height:100px;
+    border: 1px solid white;
+}
+
+/* gutter width on all col except the last*/
+div [class^="col"]{
+  padding-right: 20px;
+  background: white;
+}
+
+div [class^="col"]:last-of-type {
+  padding-right: 0px;
+}
