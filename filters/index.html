@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Filters</title>
+
+	<style>
+     .my_filter{
+      -webkit-filter: brightness(1) sepia(1); 
+      filter: brightness(1) sepia(1);
+     }
+
+
+    .my_filter:hover{
+      animation: 3s myfilteranimation forwards;
+    }
+
+
+     @keyframes myfilteranimation{
+	      100%{
+	       -webkit-filter: brightness(1) sepia(0); 
+	        filter: brightness(1) sepia(0);
+	       }
+     }
+
+	</style>
+</head>
+<body>
+
+<img class="my_filter" src="img/flower.jpg" alt="flower">
+
+</body>
+</html>
